@@ -4,6 +4,11 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    th{
+        padding-right: 30px;
+    }
+</style>
 
 <table>
     <thead>
@@ -13,6 +18,7 @@
             <th>Rating</th>
             <th>Release Year</th>
             <th>Genre</th>
+            <th>Image</th> 
         </tr>
     </thead>
     <tbody>
@@ -24,6 +30,10 @@
                 <td>@movie.Rating</td>
                 <td>@movie.ReleaseYear</td>
                 <td>@movie.Genre</td>
+                 <td>
+                 <img src="@Url.Content(movie.Image)"/></td>
+
+
             </tr>
         }
     </tbody>

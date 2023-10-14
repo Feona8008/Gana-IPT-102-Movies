@@ -19,4 +19,12 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: aquamarine;
+  font-size: 25px;
+  padding: 15px;
+}
+
+img {
+  height: 320px;
+width: 225px;
 }
